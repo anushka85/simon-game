@@ -51,7 +51,7 @@ function nextsequence(){
     var randomchosencolor=buttoncolors[num];
 gamepatterns.push(randomchosencolor);
 $("#"+ randomchosencolor).fadeIn(100).fadeOut(100).fadeIn(100);
-var audio=new Audio("sounds/"+ randomchosencolor +".mp3");
+var audio=new Audio(randomchosencolor +".mp3");
 audio.play();
 playsound(randomchosencolor);
 
@@ -59,7 +59,7 @@ playsound(randomchosencolor);
 
 
 function playsound(name){
-  var audio=new Audio("sounds/"+ name +".mp3");
+  var audio=new Audio(name +".mp3");
 audio.play();
 
 }
